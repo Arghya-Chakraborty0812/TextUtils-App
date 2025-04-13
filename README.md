@@ -21,14 +21,6 @@ A powerful, easy-to-use text utility tool built with **React.js**. TextUtils all
 
 ---
 
-## 📸 Screenshots
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/00000000/your-screenshot.png" alt="TextUtils Screenshot" width="700"/>
-</p>
-
----
-
 ## 🛠️ Tech Stack
 
 - **React.js**
