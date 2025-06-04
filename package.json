@@ -11,10 +11,7 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.3.0",
     "react-scripts": "5.0.1",
-<<<<<<< HEAD
     "tesseract.js": "^6.0.1",
-=======
->>>>>>> 1aaf98bc891e5c51f92d4b4f2050bce235eb05ca
     "web-vitals": "^2.1.4"
   },
   "scripts": {
