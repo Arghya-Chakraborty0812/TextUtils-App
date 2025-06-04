@@ -1,17 +1,9 @@
 import React, { useState } from 'react';
-
 import Tesseract from 'tesseract.js';
 
 export default function TextForm(props) {
     const [text, setText] = useState("");
     const [selectedImage, setSelectedImage] = useState(null);
-   
-
-
-
-export default function TextForm(props) {
-    const [text, setText] = useState("");
-    
 
     const handleUpClick = () => {
         let newText = text.toUpperCase();
@@ -43,18 +35,20 @@ export default function TextForm(props) {
     }
     
     const imageToText = ()=> {
-        if(!selectedImage)
-            return alert("Choose a Image");
+        if(!selectedImage) return alert("Choose an Image");
         Tesseract.recognize(selectedImage, "eng", {})
-        .then(({data : {text : extractedText}}) => {
-            setText(extractedText);
-        })
-
+            .then(({ data: { text: extractedText } }) => {
+                setText(extractedText);
+            })
+            .catch(err => {
+                alert("Error extracting text from image: " + err.message);
+            });
     }
+
     return (
         <>
             <div className='container' style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>
-                <h1 style={{ color: (props.mode === 'dark' || props.greenMode === 'success') ? 'white' : 'black'  }}>{props.heading}</h1>
+                <h1 style={{ color: (props.mode === 'dark' || props.greenMode === 'success') ? 'white' : 'black' }}>{props.heading}</h1>
                 <div className="mb-3">
                     <textarea 
                         className="form-control" 
@@ -77,15 +71,12 @@ export default function TextForm(props) {
                     <button className={`btn btn-${props.greenMode} mx-1 my-1`} onClick={imageToText}>Extract Text</button>
                     <input type='file' onChange={handleImageChange} accept='image/*'/>
                 </label>
-                
-
-
             </div>
             <div className="container my-3" style={{ color: (props.mode === 'dark' || props.greenMode === 'success') ? 'white' : 'black' }}>
-                <h2 style={{ color: (props.mode === 'dark' || props.greenMode === 'success')}}>Your Text Summary</h2>
+                <h2>Your Text Summary</h2>
                 <p>{text.split(" ").filter(word => word.length > 0).length} words and {text.length} characters</p>
                 <p>{0.008 * text.split(" ").filter(word => word.length > 0).length} Minutes Read</p>
-                <h2 style={{ color: (props.mode === 'dark' || props.greenMode === 'success') ? 'white' : 'black' }}>Preview</h2>
+                <h2>Preview</h2>
                 <p>{text.length > 0 ? text : "Nothing to preview!"}</p>
             </div>
         </>
