@@ -1,3 +1,47 @@
+<<<<<<< HEAD
+=======
+# 📝 TextUtils App
+
+A powerful, easy-to-use text utility tool built with **React.js**. TextUtils allows users to manipulate and analyze their text in multiple ways, such as converting case, removing extra spaces, and much more — all in a sleek and responsive UI.
+
+---
+
+## 🚀 Features
+
+- ✅ Convert text to **Uppercase**
+- ✅ Convert text to **Lowercase**
+- ✅ **Capitalize** the first letter of each word
+- ✅ **Remove Extra Spaces**
+- ✅ **Copy** text to clipboard
+- ✅ **Clear** text in one click
+- ✅ **Text Summary**
+  - Word Count
+  - Character Count
+  - Estimated Reading Time
+- ✅ **Dark/Light Mode Toggle** 🌙☀️
+- ✅ Responsive and intuitive **User Interface**
+
+---
+
+## 🛠️ Tech Stack
+
+- **React.js**
+- **Bootstrap 5**
+- **React Router DOM**
+
+---
+
+## 📦 Installation
+
+Clone this repository and run it locally:
+
+```bash
+git clone https://github.com/Arghya-Chakraborty0812/TextUtils-App.git
+cd TextUtils-App
+npm install
+npm start
+
+>>>>>>> 1aaf98bc891e5c51f92d4b4f2050bce235eb05ca
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
