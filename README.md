@@ -1,5 +1,4 @@
 
-=======
 # 📝 TextUtils App
 
 A powerful, easy-to-use text utility tool built with **React.js**. TextUtils allows users to manipulate and analyze their text in multiple ways, such as converting case, removing extra spaces, and much more — all in a sleek and responsive UI.
@@ -20,7 +19,7 @@ A powerful, easy-to-use text utility tool built with **React.js**. TextUtils all
   - Estimated Reading Time
 - ✅ **Dark/Light Mode Toggle** 🌙☀️
 - ✅ Responsive and intuitive **User Interface**
-- ✅ **OCR** which takes an image file has input and extracts text from it. 
+- ✅ **OCR** which takes an image file as input and extracts text from it. 
 
 ---
 
@@ -29,6 +28,7 @@ A powerful, easy-to-use text utility tool built with **React.js**. TextUtils all
 - **React.js**
 - **Bootstrap 5**
 - **React Router DOM**
+- **Tesseract.js**
 
 ---
 
