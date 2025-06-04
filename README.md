@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 =======
 # 📝 TextUtils App
 
@@ -20,6 +20,7 @@ A powerful, easy-to-use text utility tool built with **React.js**. TextUtils all
   - Estimated Reading Time
 - ✅ **Dark/Light Mode Toggle** 🌙☀️
 - ✅ Responsive and intuitive **User Interface**
+- ✅ **OCR** which takes an image file has input and extracts text from it. 
 
 ---
 
